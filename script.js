@@ -1,5 +1,7 @@
 // Notify backend of page visit
-fetch("http://InceptorDev.pythonanywhere.com/notify-visit", { method: "POST" });
+fetch("https://InceptorDev.pythonanywhere.com/notify-visit", {
+  method: "POST",
+});
 
 // Smooth Scroll Effect
 document.querySelectorAll("a").forEach((anchor) => {
@@ -20,7 +22,7 @@ document
     const name = this.querySelector('input[type="text"]').value;
     const message = this.querySelector("textarea").value;
 
-    fetch("http://InceptorDev.pythonanywhere.com/contact", {
+    fetch("https://InceptorDev.pythonanywhere.com/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, message }),
