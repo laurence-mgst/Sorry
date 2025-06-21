@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+section {
+  max-width: 600px;
+  margin: 60px auto 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 72, 120, 0.12);
+  padding: 40px 32px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+section:hover {
+  box-shadow: 0 12px 40px rgba(60, 72, 120, 0.18);
+}
+
+h1,
+h2 {
+  color: #4f46e5;
+  margin-bottom: 16px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 28px;
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+  color: #fff;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+a:hover {
+  background: linear-gradient(90deg, #818cf8 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+input[type="text"],
+textarea {
+  padding: 12px 14px;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #f1f5fd;
+  resize: vertical;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 1.5px solid #6366f1;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #818cf8 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 700px) {
+  section {
+    max-width: 95vw;
+    padding: 24px 8vw;
+  }
+}
